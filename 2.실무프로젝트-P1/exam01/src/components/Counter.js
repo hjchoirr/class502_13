@@ -1,5 +1,5 @@
 //함수형 컴포넌트
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const Counter = () => {
   /*
@@ -9,13 +9,16 @@ const Counter = () => {
   */
 
   let num = 10;
-  console.log('랜더링!', ' num: ', num);
+  let num2 = useRef(10);
+
+  console.log('랜더링!', ' num: ', num, ' num2.current: ', num2.current);
 
   const [number, setNumber] = useState(3);
   const [number2, setNumber2] = useState(4);
   const plus = () => {
-    setNumber(number + 1);
     num++;
+    num2.current++;
+    setNumber(number + 1);
   };
   const minus = () => setNumber(number - 1);
 
