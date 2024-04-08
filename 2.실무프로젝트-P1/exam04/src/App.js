@@ -1,3 +1,4 @@
+/*
 import { useState } from 'react';
 import LifeCycle from './Components/LifeCycle';
 
@@ -11,6 +12,14 @@ const App = () => {
         클릭
       </button>
     </>
+  );
+};
+*/
+
+import Average from "./Components/Average";
+const App = () => {
+  return (
+    <Average />
   );
 };
 export default App;

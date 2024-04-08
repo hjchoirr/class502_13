@@ -1,5 +1,4 @@
-import { MdCheckBox } from 'react-icons/md';
-import { MdCheckBoxOutlineBlank } from 'react-icons/md';
+import { MdCheckBox, MdCheckBoxOutlineBlank } from 'react-icons/md';
 import { FaRegTrashCan } from 'react-icons/fa6';
 
 const TodoList = ({ items, onToggle, onRemove }) => {
@@ -19,4 +18,5 @@ const TodoList = ({ items, onToggle, onRemove }) => {
     </ul>
   );
 };
+
 export default TodoList;

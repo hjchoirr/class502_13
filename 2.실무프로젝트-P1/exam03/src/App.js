@@ -1,7 +1,6 @@
-import TodoContainer from "./containers/TodoContainer";
-
+import TodoContainer from './containers/TodoContainer';
 
 const App = () => {
-  return <TodoContainer />
+  return <TodoContainer />;
 };
 export default App;
