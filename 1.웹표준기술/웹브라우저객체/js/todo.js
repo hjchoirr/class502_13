@@ -5,12 +5,15 @@ const todo = {
     // 저장값 조회 -> 스케줄 완성
     const jsonData = localStorage.getItem("todos");
     const todos = jsonData ? JSON.parse(jsonData) : []; //jsonData undefined 인지 체크먼저..
-    
+    this.data = todos;
+    this.id = todos.length + 1;
+
     const itemsEl = document.querySelector(".items");
 
     for (const item of todos) {
       // symbol.iterator 반복자 패턴
       const LiEl = this.getItem(item.title);
+      LiEl.dataset.id = item.id;
       itemsEl.appendChild(LiEl);
     }
   },
@@ -39,6 +42,7 @@ const todo = {
       title: subject,
     });
     this.save();
+    liEl.dataset.id = id;
   },
 
   save() {
@@ -46,7 +50,6 @@ const todo = {
   },
 
   getItem(subject) {
-
     const liEl = document.createElement("li");
     liEl.appendChild(document.createTextNode(subject));
 
@@ -56,12 +59,19 @@ const todo = {
 
     //스케줄 삭제
     buttonEl.addEventListener("click", function () {
-        const itemsEl = document.querySelector(".items");
-        itemsEl.removeChild(liEl);
+      const itemsEl = document.querySelector(".items");
+      itemsEl.removeChild(liEl);
+      // localStorage에 저장된 데이터 삭제
+      const id = Number(liEl.dataset.id);
+      const index = todo.data.findIndex((item) => item.id === id);
+      if (index !== -1) {
+        todo.data.splice(index, 1);
+        todo.save();
+      }
     });
 
     return liEl;
-  }
+  },
 };
 
 window.addEventListener("DOMContentLoaded", function () {

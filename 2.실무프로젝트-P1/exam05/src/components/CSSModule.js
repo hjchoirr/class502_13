@@ -1,6 +1,8 @@
 import styles from './CSSModule.module.scss';
 import { useState } from 'react';
-import classNames from 'classnames';
+import classNames from 'classnames/bind';
+
+const cx = classNames.bind(styles);
 
 //console.log(styles);
 const CSSModule = () => {
@@ -13,7 +15,7 @@ const CSSModule = () => {
         <span className={styles.hightlight}>반갑습니다.</span>
       </div>
 
-      <div className={classNames('menus', ['cls1', 'cls2'], { on: visible })}>메뉴</div> 
+      <div className={cx('menus', ['cls1', 'cls2'], { on: visible })}>메뉴</div> 
       <button type="button" onClick={() => setVisible(!visible)}>
         클릭
       </button>
