@@ -42,7 +42,7 @@ const todo = {
     this.id = todos.length;
 
     const itemsEl = document.querySelector(".items");
-
+      
     for (const item of todos) {
       // symbol.iterator 반복자 패턴
       const LiEl = this.getItem(item.title);
