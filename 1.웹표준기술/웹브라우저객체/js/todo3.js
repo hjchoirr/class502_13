@@ -13,6 +13,7 @@ const todo = {
     
     const liEl = dom.querySelector("li");
     const buttonEl = liEl.querySelector("button");
+    
     buttonEl.addEventListener("click", function () {
       const itemsEl = document.querySelector(".items");
       itemsEl.removeChild(liEl);
