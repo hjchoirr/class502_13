@@ -6,6 +6,14 @@ public class Student {
 
     @Override
     public String toString() {
-        return super.toString() + " : " + this.id + " : " + this.name;
+        return "id : " + id + " name : " + name;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Student std) {
+            return std.id == id;
+        }
+        return false;
     }
 }
