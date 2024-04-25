@@ -1,5 +1,7 @@
 package exam06;
 
+import java.util.Objects;
+
 public class Book extends java.lang.Object{
     private int isbn;
     private String title;

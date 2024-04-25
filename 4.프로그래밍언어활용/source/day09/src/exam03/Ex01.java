@@ -7,7 +7,6 @@ public class Ex01 {
         System.out.println(num2);
 
         String str = "1000";
-
         int num3 = Integer.parseInt(str);
     }
 }

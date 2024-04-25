@@ -6,5 +6,6 @@ public class Ex01 {
         System.out.println(num);
         double num2 = Math.abs(100);
         System.out.println(num2);
+
     }
 }
