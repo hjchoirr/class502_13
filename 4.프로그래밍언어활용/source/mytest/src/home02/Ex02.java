@@ -1,9 +1,7 @@
-package hakwon01;
-
-import java.util.HashSet;
+package home02;
 
 public class Ex02 {
     public static void main(String[] args) {
-       // HashSet
+        System.out.println("Hello");
     }
 }
