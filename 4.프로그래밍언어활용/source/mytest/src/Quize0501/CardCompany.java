@@ -4,6 +4,7 @@ public class CardCompany {
     private static CardCompany instance;
 
     private CardCompany() {
+        System.out.println("카드회사 인스턴스 생성!");
     }
 
     public static CardCompany getInstance() {
