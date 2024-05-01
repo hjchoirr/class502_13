@@ -1,4 +1,4 @@
-package Quize0501;
+package Quize0501.cardcompany;
 
 public class Card {
     private int cardNo;

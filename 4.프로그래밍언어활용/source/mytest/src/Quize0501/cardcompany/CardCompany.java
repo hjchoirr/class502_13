@@ -1,4 +1,4 @@
-package Quize0501;
+package Quize0501.cardcompany;
 
 public class CardCompany {
     private static CardCompany instance;

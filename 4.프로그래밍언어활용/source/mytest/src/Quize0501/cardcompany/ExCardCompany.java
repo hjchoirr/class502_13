@@ -1,4 +1,4 @@
-package Quize0501;
+package Quize0501.cardcompany;
 
 public class ExCardCompany {
     public static void main(String[] args) {
