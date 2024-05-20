@@ -2,12 +2,12 @@ package hakwon03;
 
 public class B extends A{
     public void paint() {
+        System.out.println("B paint");
+        //draw();
         super.draw();
-        System.out.print("C");
-        this.draw();
     }
 
     public void draw() {
-        System.out.print("D");
+        System.out.println("B draw");
     }
 }
