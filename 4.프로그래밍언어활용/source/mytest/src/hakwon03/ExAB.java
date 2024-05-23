@@ -7,5 +7,7 @@ public class ExAB {
         b.paint();
         //System.out.println();
         //b.draw();
+        A a = new A();
+        a.draw(); // StackOverflowError
     }
 }
