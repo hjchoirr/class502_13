@@ -4,12 +4,12 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mappers.MemberMapper">
     <resultMap id="memberMap" type="exam01.Member">
-        <result column="USER_NO" property="userNo" />
-        <result column="USER_ID" property="userId" />
-        <result column="USER_PW" property="userPw" />
-        <result column="USER_NM" property="userNm" />
-        <result column="MOBILE" property="mobile" />
-        <result column="REG_DT" property="regDt" />
+        <result column="user_no" property="userNo" />
+        <result column="user_id" property="userId" />
+        <result column="user_pw" property="userPw" />
+        <result column="user_nm" property="userNm" />
+        <result column="mobile" property="mobile" />
+        <result column="reg_dt" property="regDt" />
     </resultMap>
 
     <select id="getList" resultMap="memberMap">
