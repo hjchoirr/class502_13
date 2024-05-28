@@ -1,6 +1,7 @@
 package homework;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
@@ -60,6 +61,7 @@ public class CalTeacher {
 
         int[] days = IntStream.rangeClosed(start, endDate.getDayOfMonth()).toArray();
 
+        //System.out.println(Arrays.toString(days));
         return days;
     }
 }
