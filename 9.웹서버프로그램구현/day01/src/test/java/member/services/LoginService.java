@@ -1,9 +1,9 @@
 package member.services;
 
-import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
 
 public class LoginService {
-    public void process(HttpServlet request) {
+    public void process(HttpServletRequest request) {
 
     }
 }

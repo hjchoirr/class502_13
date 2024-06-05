@@ -1,6 +1,6 @@
 package tests;
 
-import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
 import member.services.LoginService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class LoginServiceTest {
     private LoginService loginService;
-    private HttpServlet request;
+    private HttpServletRequest request;
     @BeforeEach
     void init() {
         loginService = new LoginService();
