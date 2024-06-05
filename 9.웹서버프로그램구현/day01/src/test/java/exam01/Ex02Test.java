@@ -1,6 +1,7 @@
 package exam01;
 import org.junit.jupiter.api.*;
 
+@Tag("exercise")
 public class Ex02Test {
     @BeforeAll
     static void beforeAll() {
